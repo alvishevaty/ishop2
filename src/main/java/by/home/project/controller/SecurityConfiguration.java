@@ -51,8 +51,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.formLogin()
 					.loginPage("/signin")
 					.loginProcessingUrl("/signin")
-				.failureUrl(
-						"/signin?signin=error")
+				.failureUrl("/signin?signin=error")
 				.permitAll()
 				.and()
 				.logout().logoutUrl("/signout")
