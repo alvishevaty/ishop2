@@ -59,7 +59,7 @@
 					<form:password path="password"/><br />
 					<br /> 
 					
-					<form:button class="button" name="registration">Registration"</form:button><br />
+					<form:button class="button" name="registration">Registration</form:button><br />
 
 				</form:form>
 
