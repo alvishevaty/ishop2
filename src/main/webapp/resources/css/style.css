@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+A:link {
+	text-decoration: none;
+}
+
+A:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+A:hover {
+	color: #adc40f;
+}
+
+.button {
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+	padding: .8em 0.2em calc(.5em + 1px);
+	border-radius: 3px;
+	background: rgb(105, 105, 105);
+	box-shadow: 0 -3px rgb(105, 105, 105) inset;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: rgb(169, 169, 169);
+}
+
+.errorMessage {
+	color: red;
+	text-style: italic;
+}
+
+.marginTL {
+	margin-top: 100 px;
+	margin-left: 200 px;
+}
+
+.marginT {
+	margin-top: 100 px;
+}
+
+/* HEADER decoration */
+#header {
+	width: 100%;
+	border-bottom: 2px solid #000;
+	background-color: #ffffff;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	overflow: hidden;
+	/* position: fixed;
+	top:0; */
+}
+
+#header>div {
+	width: 31%;
+	background: #fff;
+	float: left;
+	margin: 1.167%;
+	line-height: 50px;
+}
+
+.shopName {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.siteName {
+	font-size: 40px;
+	color: #000000;
+	font-style: medium;
+}
+
+.header-nav {
+	top: 50%;
+	display: flex;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.header-nav a {
+	text-transform: capitalize;
+	color: black;
+}
+
+.header-nav a+a {
+	margin-left: 10px;
+}
+
+.header-nav a:hover {
+	color: #adc40f;
+}
+
+.localisation table {
+	text-align: center;
+	float: right;
+}
+
+.localisation a {
+	color: black;
+}
+
+.localisation a:hover {
+	color: #adc40f;
+}
+
+.localisation a+a {
+	margin-right: 5px;
+	margin: 4px 5px;
+}
+
+.localisation input {
+	background-color: #400040;
+	border: none;
+	color: white;
+	padding: 3px 3px;
+	margin: 3px 3px;
+	cursor: pointer;
+}
+
+/* HEADER-END */
+
+/* CATALOG DECORATION */
+
+/* LEFT COLUMN */
+.leftColumn {
+	margin-top: 20px;
+	float: left;
+	width: 160px;
+	background-color: #fff;
+	
+}
+
+.categoryList {
+	font-color: black;
+	margin: 10px 10px 10px 10px;
+}
+
+.categoryList li {
+	list-style-type: none;
+}
+
+.subcategoryList {
+	color: black;
+	margin-left: 25px;
+	padding: 2px;
+}
+/* LEFT COLUMN - END*/
+
+/* CATALOG DISPLAY */
+.listContainer {
+	float: left;
+	width: 80%;
+	background: #fff;
+	margin: 1.2%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.oneGoodContainer {
+	/* float: left; */
+	width: 300px;
+	margin: 7px;
+	border: 2px solid black;
+	padding: 10px;
+	line-height: 1.5;
+}
+
+.oneGoodContainer input [type=submit] {
+	bottom: 0px;
+	padding: 3px 6px;
+	margin: 4px 4px;
+	cursor: pointer;
+}
+
+.oneGoodContainer img {
+	margin: 5px;
+	width: 95%;
+	border: 1px solid #ccc;
+}
+
+/* CATALOG DISPLAY ---- END*/
+
+/* GOODS-INFO-PAGE */
+.gCchild {
+	float: left;
+	margin-right: 1%;
+}
+
+.goodsImg {
+	width: 25%;
+}
+
+.goodsInfoColumn {
+	margin: 20px 0 10px 10px;
+	width: 40%
+}
+
+.parameter{
+	float: left;
+	width: 140px;
+	font-weight: 700;
+	line-height: 0.9em;
+	padding: 10px;
+}
+
+.parameterValue{
+	float: left;
+	width: 300px;
+	line-height: 0.9em;
+	padding: 10px;
+}
+
+.goodsImg img {
+	width: 90%;
+	margin: 20px 20px 20px 40px;
+	border: 1px solid #ccc;
+}
+
+/* GOODS-INFO-PAGE------END*/
+
+/* SIGNIN PAGE-----END */
+.loginForm {
+	width: 100%;
+}
+
+.title {
+	display: block;
+	font-size: 26px;
+	color: #333333;
+	line-height: 1.2;
+	text-align: center;
+	margin: 10px 25px;
+}
+
+.formcontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.signinContainer {
+	height: 320px;
+	width: 400px;
+	margin-top: 40px;
+	text-align: center;
+	border: 1px solid #ccc;
+	justify-content: center;
+}
+
+.signinContainer input {
+	margin-bottom: 5px;
+}
+
+/* Registration */
+.registrationContainer {
+	height: 400px;
+	width: 400px;
+	margin-top: 40px;
+	text-align: center;
+	border: 1px solid #ccc;
+	justify-content: center;
+}
+
+.registrationContainer input {
+	margin-bottom: 5px;
+}
+
+.registrationSuccessMessage {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.registrationSuccessMessage span {
+	display: block;
+	font-size: 16px;
+	color: #333333;
+	line-height: 1.2;
+	text-align: center;
+	margin: 10px 25px;
+}
+
+.fullContainer {
+	margin: 20px 20px 20px 20px;
+}
+
+.basketContainer>div {
+	border: 1px solid #ccc;
+	width: 45%;
+	background: #fff;
+	float: left;
+	margin: 1.167%;
+	line-height: 50px;
+}
+
+.fullPrice{
+	width: 100%;
+	float: right;
+	text-align: right;
+	margin: 0 10px 0 10px;
+}
+
+.fullPrice span{
+	font-size: 700;
+}
+
+.meas{
+	font-style: italic;
+}
+ 
+.formTitle{
+	margin-left: 20px;
+} 
+ 
+.orderParameter{
+	float: left;
+	width: 20%;
+	font-weight: 700;
+	line-height: 0.9em;
+	padding: 0px;
+	margin-left: 50px;
+}
+
+.orderParameterValue{
+	float: left;
+	width: 45%;
+	line-height: 0.9em;
+	padding: 0px;
+	margin: 0;
+}
+
+.oneGoodMiniContainer {
+	float: left;
+	width: 160px;
+	height: 100%;
+	margin: 7px;
+	border: 2px solid black;
+	padding: 10px;
+	line-height: 1.5;
+}
+
+.oneGoodMiniContainer input [type=submit] {
+	bottom: 0px;
+	padding: 3px 6px;
+	margin: 4px 4px;
+	cursor: pointer;
+}
+
+.oneGoodMiniContainer img {
+	margin: 0.1px;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+.orderSubmit{
+	margin-left: 100px;
+}
+
+.emptyBasketMessage {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.emptyBasketMessage h2 {
+	display: block;
+	font-size: 26px;
+	color: #333333;
+	line-height: 1.2;
+	text-align: center;
+	margin: 10px 25px;
+}
+
+/* USER PROFILE PAGE */
+.fullProfileContainer {
+	/* margin-top: 80px; */
+	border: 1px solid #ccc;
+	margin: 20px 20px 20px 20px;
+	min-height: 100vh;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+}
+
+.profileContainer {
+	height: 150px;
+	width: 400px;
+	margin-top: 40px;
+	text-align: left;
+	border: 1px solid #ccc;
+	padding: 25px 5px 25px 25px;;
+	justify-content: center;
+}
+
+.profileContainer table {
+	text-align: left;
+	justify-content: center;
+}
+
+.col1 {
+	width: 200px;
+}
+
+.coln {
+	width: 60px;
+}
+
+.welcomeMessageContainer {
+	width: 100%;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 26px;
+}
