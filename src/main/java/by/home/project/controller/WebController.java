@@ -99,7 +99,7 @@ public class WebController {
 				return "redirect:/mainpage?registration=success";
 				
 			} else {
-				return "registrationpage?registration=error";
+				return "redirect:/registrationpage?registration=error";
 			}
 
 		} catch (ServiceException e) {
